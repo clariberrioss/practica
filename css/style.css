@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.comedero {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 5px 50px;
+}
+
+.comedero ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.comedero ul li::after {
+    content: url(../img/down.png);
+}
+.header-amarillo {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px ;
+}
+
+.navbarra ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.navbarra ul {
+  display: flex;
+  gap: 25px; 
+  list-style: none;
+  padding-right: 20px;
+}
+
+.navbarra ul li::before {
+    content: url(../img/iconopatita.png);
+    margin-right: 6px ;
+}
+ /* FIN DEL HEADERR */
+
+/* BANNEEER DE PLATO */
+.banner {
+  position: relative; /* para posicionar el hero */
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(-50%); 
+}
+
+.hero h1 {
+    font-size: 33px;
+    font-weight: 530;
+    background-color: aliceblue;
+    color: #3C2313;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #3C2313;
+}
+
+.hero a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #F0A83E;
+    padding: 20px;
+    border-radius: 5px; 
+    color:aliceblue ;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30PX;
+}
+
+.icono-pata {
+    width: 100px;
+    padding-bottom: 30PX;
+}
+
+.productos h2 {
+    font-size: 50px;
+    color: #3C2313;
+    padding-bottom: 30px ;
+}
+
+.productos ul {
+    display: flex;
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.productos ul li::before {
+    content: "-";
+    padding:15px;
+}
+
+.productos li:first-child::before {
+    content: none;
+}
+
+ /* TARJETASS */
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 280px;
+    padding-bottom: 50px;
+}
+
+ /* FORMULARIOO BODY */
+
+.formulario h3 {
+    font-size: 30px;
+    font-weight: 780;
+    color: #3C2313;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form input {
+    background-color: #3C2313;
+    width: 100%;
+    font-size: 15px;
+    padding: 20px;
+    padding-right: 150px;
+    border-radius: 20px;
+}
+.formulario, .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+form button {
+    font-size: 25px;
+    color: antiquewhite;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border: none;
+}
+.resetear {
+    background-color: grey;
+
+}
+
+.enviar {
+    background-color: #F0A83E;
+}
+
+/* FOOOTEERRRR */
+footer {
+    background-color: #3C2313;
+}
+.footer-contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center ;
+    background-color: #F0A83E;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 30px;
+    gap: 15px;
+}
+
+.footer-form h4 {
+  margin-right: auto; /* empuja el formulario hacia la derecha */
+  font-size: 20px;
+}
+
+.form-footer input {
+  width: 300px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.form-footer button {
+  background-color: #3c2313;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.info {
+    width: 60px;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.texto h5 {
+  font-size: 22px;
+  color: white;
+}
+
+.texto {
+    font-size: 12px;
+    color: #b8a99c; 
+}
+
+.front{
+    color: #F0A83E;
+    font-size: 25px;
+    font-weight:900;
+}
+.front span {
+    color:antiquewhite;
+}
+
+.icono {
+  width: 25px;
+}
+
+.final-footer {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 12px;
+}
